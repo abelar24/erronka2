@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tiketa</title>
+    <link rel="stylesheet" href="https://unpkg.com/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <script src="js/javascript.js"></script>
+    <style>
+        .ticket-section {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .ticket-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 2px solid #dee2e6;
+            padding-bottom: 15px;
+            margin-bottom: 20px;
+        }
+        .ticket-header img {
+            max-width: 150px;
+        }
+        .ticket-details {
+            margin-bottom: 20px;
+        }
+        .ticket-details h4 {
+            margin-bottom: 15px;
+        }
+        .table th, .table td {
+            vertical-align: middle;
+        }
+        .btn-back {
+            background-color: #007bff;
+            border-color: #007bff;
+            color: #ffffff;
+        }
+        .btn-back:hover {
+            background-color: #0056b3;
+            border-color: #0056b3;
+        }
+    </style>
+</head>
+<body onload="sortuTiketa()">
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 col-lg-10 col-xl-8 ticket-section">
+                    <div class="ticket-header">
+                        <h2 class="text-uppercase">Tiketa</h2>
+                        <img src="super.png" alt="Logo">
+                    </div>
+                    <div id="ticket-details" class="ticket-details">
+                    </div>
+                    <div class="table-responsive">
+                        <table class="table table-striped">
+                            <tbody id="products">
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="text-end">
+                        <button type="button" class="btn btn-back" onclick="atzeraBueltatu()">Bueltatu Atzera</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
