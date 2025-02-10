@@ -1,3 +1,5 @@
+//garepen frogaa
+
 using System;
 using System.IO;
 using TiketBAI;
